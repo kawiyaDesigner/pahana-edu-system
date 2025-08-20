@@ -1,3 +1,7 @@
+<%
+    response.sendRedirect("item?action=list");
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
