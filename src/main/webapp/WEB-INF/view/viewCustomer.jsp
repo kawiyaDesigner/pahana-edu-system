@@ -175,13 +175,7 @@
     <jsp:include page="navbar.jsp" />
     
     <div class="container">
-        <a href="customer?action=list" class="back-link">Back to Customer List</a>
-        
-        <div class="page-header">
-            <h1 class="page-title">Customer Details</h1>
-            <p class="page-subtitle">View customer account information</p>
-        </div>
-        
+            
         <div class="info-container">
             <div class="info-group">
                 <div class="info-label">Customer ID</div>

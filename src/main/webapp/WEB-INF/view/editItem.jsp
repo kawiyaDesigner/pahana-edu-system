@@ -29,6 +29,9 @@
         .page-header {
             text-align: center;
             margin-bottom: 2rem;
+            display:flex;
+            justify-content: space-between;
+            
         }
 
         .page-title {
@@ -132,14 +135,17 @@
     <jsp:include page="navbar.jsp" />
     
     <div class="container">
-        <a href="item?action=list" class="back-link">Back to Item List</a>
         
-        <div class="page-header">
-            <h1 class="page-title">Edit Item</h1>
-            <p class="page-subtitle">Update item information</p>
-        </div>
         
         <div class="form-container">
+        
+        
+        <div class="page-header">
+        	<a href="item?action=list" class="back-link">Back to Item List</a>
+            <h1 class="page-title">Edit Item</h1>
+           
+        </div>
+        
             <form action="item?action=update" method="post">
                 <input type="hidden" name="id" value="${item.itemId}" />
                 

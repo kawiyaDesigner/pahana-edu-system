@@ -30,6 +30,8 @@
         .page-header {
             text-align: center;
             margin-bottom: 2rem;
+             display:flex;
+            justify-content: space-between;
         }
 
         .page-title {
@@ -159,14 +161,16 @@
     <jsp:include page="navbar.jsp" />
     
     <div class="container">
-        <a href="customer?action=list" class="back-link">Back to Customer List</a>
+      
         
-        <div class="page-header">
-            <h1 class="page-title">Edit Customer</h1>
-            <p class="page-subtitle">Update customer information</p>
-        </div>
+       
         
         <div class="form-container">
+         <div class="page-header">
+            
+             <a href="customer?action=list" class="back-link">Back to Customer List</a>
+             <h1 class="page-title">Edit Customer</h1>
+        </div>
             <div class="info-box">
                 <div class="info-title">Customer Account Information</div>
                 <p class="info-text">Customer ID: <strong>${customer.customerId}</strong> | 

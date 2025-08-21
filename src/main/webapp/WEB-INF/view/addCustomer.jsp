@@ -29,6 +29,8 @@ if (session.getAttribute("user") == null) {
         .page-header {
             text-align: center;
             margin-bottom: 2rem;
+             display:flex;
+            justify-content: space-between;
         }
 
         .page-title {
@@ -216,14 +218,13 @@ if (session.getAttribute("user") == null) {
     <jsp:include page="navbar.jsp" />
     
     <div class="container">
-        <a href="customer?action=list" class="back-link">Back to Customer List</a>
-        
-        <div class="page-header">
-            <h1 class="page-title">Add New Customer</h1>
-            <p class="page-subtitle">Register a new customer account</p>
-        </div>
-        
+       
         <div class="form-container">
+         <div class="page-header">
+         <a href="customer?action=list" class="back-link">Back to Customer List</a>
+            <h1 class="page-title">Add New Customer</h1>
+           
+        </div>
             <c:if test="${not empty errorMessage}">
                 <div class="alert alert-danger" role="alert">
                     <i class="fas fa-exclamation-circle"></i> ${errorMessage}

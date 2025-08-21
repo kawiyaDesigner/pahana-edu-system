@@ -287,7 +287,6 @@
     <jsp:include page="navbar.jsp" />
     
     <div class="container">
-        <a href="bill?action=list" class="back-link">Back to Bills</a>
         
         <div class="invoice-container">
             <div class="invoice-header">
